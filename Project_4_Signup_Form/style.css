@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    background-color: black;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.mainContainer {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.heading {
+    font-size: clamp(20px, 2vw, 24px);  
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: normal;           
+}
+
+.signupForm {
+    flex-direction: column;
+    display: flex;
+    margin-top:20px;
+    gap: 16px;
+}
+
+.inputField {
+    width: clamp(200px, 50vw, 400px);
+    padding: clamp(8px, 1.5vw, 10px);
+    font-size: clamp(14px, 2vw, 20px);
+    border: 2px solid white;
+    border-radius: 8px;
+    outline: none;
+    background-color:#ffffffd3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0b0101; 
+}
+
+.inputField::placeholder{
+    color: rgb(11, 0, 0);
+    font-weight: 400; 
+}
+
+.inputField:focus{
+    box-shadow:0px 0px 30px #ffffff;
+    border:2px solid white; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    
+}
+
+.radioContainer,
+.checkboxContainer {
+    margin-left: 1em;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(14px, 1.8vw, 18px);
+    font-weight:600;
+    color: #ffffff;
+    margin-top: 10px; 
+    position: relative;
+}
+
+
+.radioContainer>label {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.radioContainer input[type="radio"],
+.checkboxContainer input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.submitBtn{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: clamp(14px, 2vw, 20px); 
+    padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 28px);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #e6dfdf; 
+    box-shadow:0px 0px 30px #ffffff;
+    transform: scale(1.05); 
+}
+
+.submitBtn:active {
+    transform: scale(0.98); 
+}

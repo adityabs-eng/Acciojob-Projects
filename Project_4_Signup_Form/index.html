@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="mainContainer">
+      <header class="heading">
+        <h1><u>Signup</u></h1>
+      </header>
+      <form action="/Signup-Form/success_page/success.html" method="get" class="signupForm">
+        <input type="text" class="inputField" name="name" placeholder="Full Name" required/>
+        <input type="email" class="inputField"name="email" placeholder="Email" required/>
+       <input type="password"class="inputField" name="pswd"
+              placeholder="Password"
+              pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+              title="Must contain at least 8 characters, including 1 uppercase, 1 lowercase, and 1 number" required>
+        <input type="password" class="inputField" name="cnf-pswd"placeholder="Confirm Password" required/>
+        <input type="date" class="inputField" name="date" placeholder="First Name" required/>
+        <div class="radioContainer">
+            <input type="radio" id="student" name="user" value="student" required/>
+            <label for="student">Student</label>
+            <input type="radio" id="employee" name="user" value="employee" required/>
+            <label for="employee">Employee</label>
+        </div>
+        <div class="checkboxContainer">
+            <input type="checkbox" id="tnc" name="tnc" required/>
+            <label for="tnc">I agree to all the Terms and Conditions.</label>
+        </div>
+          <footer>
+            <button type="submit" class="submitBtn">SignUp</button>
+          </footer>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
