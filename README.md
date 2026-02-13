@@ -25,6 +25,10 @@ These projects cover frontend fundamentals through full-stack MERN development.
 
 🔗 https://adityabs-eng.github.io/Acciojob-Projects/Project_4_Signup_Form/
 
+🧪 F2 Contest Template
+
+https://adityabs-eng.github.io/Acciojob-Projects/f2_contest_template/
+
 ---
 
 ## 🛠 Tech Stack
